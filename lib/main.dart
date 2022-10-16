@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:snackbar/show_snackbar_view.dart';
+import 'package:snackbar/snackbar_view.dart';
 import 'package:snackbar/strings.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const MainView());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  static const _title = Strings.title;
+class MainView extends StatelessWidget {
+  const MainView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: _title, home: SnackBarView());
+    return const MaterialApp(title: Strings.title, home: SnackbarView());
   }
 }
